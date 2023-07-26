@@ -1,0 +1,37 @@
+UNIX EPOCH - SECONDS PASSED SINCE MIDNIGHT 1ST OF JAN 1970
+date +%s
+
+s (epoch), m (month), d (day), y (year), D (full date with slashes), A (day of week), a (short version), Y (full year), u (day of week number 1-7), -I (uppercase i) (different format)
+
+date (day, month, date, time, time zone, year)
+
+date “+%m-%d-%y”
+07-22-23
+
+date “+%D”
+07/22/23
+
+(quotes not needed in killercoda)
+
+date +%H:%M:%S
+07:24:55
+
+date +%A
+
+date “+Today is : %A”   (quotes needed)
+Today is : Saturday
+
+date +%Y
+
+date +%u (1-7 day of week)
+
+date -I (2023-07-22)
+
+date --help (all arguments for date command)
+
+date --version
+
+
+
+
+
