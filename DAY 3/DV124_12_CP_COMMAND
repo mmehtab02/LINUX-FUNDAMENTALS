@@ -1,0 +1,41 @@
+cp (options) (source) (destination)
+        -i -v etc.    source file/dir   dest
+
+2 dirs, 1 file
+
+copy file into new file (copy and create file)
+cp file1.txt file2.txt
+
+copy file into directory
+cp file1.txt dir1
+
+cp file1.txt file2.txt dir2
+    (multiple source)
+
+cp file1.txt file2.txt dir1 (will overwrite file1.txt since it already exists there)
+
+to avoid overwrite :
+
+cp -i (ask before overwrite)
+
+cd dir1
+
+cp ../file1.txt ../file2.txt .      (copy file 1 and 2 from parent dir into current dir)
+
+cp -i ../file1.txt ../file2.txt /home/ubuntu/dir1    (absolute path same as ^)
+
+cp dir1 dir3 (error) (dir contains files, unable to copy to new dir)
+
+cp -r dir1 dir3 (if dir has files, use recursive)
+
+IF DIRECTORY DOESN’T EXIST, ONLY FILES TRANSFERRED.
+
+IF DIRECTORY (DESTINATION) EXISTS, ENTIRE SOURCE DIR IS COPIED.
+
+man cp
+
+________________________________________________
+
+
+
+
