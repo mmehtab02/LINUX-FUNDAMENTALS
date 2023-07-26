@@ -1,0 +1,38 @@
+rmdir -(options) (dir)
+
+mkdir abc
+
+rmdir abc
+
+mkdir -p a/b/c/d/e
+
+ls -R
+
+rmdir a/b/c/d/e (not working) (only removed top level directory {e})
+
+rmdir -p a/b/c/d (now works)
+
+mkdir -p a/b/c/d/e
+rmdir -pv a/b/c/d/e (shows how the command works)
+
+create again…
+cd a/b/
+cat > abc.txt (create file)
+cd ../..
+
+ls -R
+
+rmdir -pv a/b/c/d/e (error to remove a/b) (remove e/d/c because they are empty)
+
+if a directory contains a file, the rmdir command will not work for that directory.
+
+rm command…..
+
+rm a/b (error)
+rm -rv a/b (recursive delete)
+
+only deleted the b file, and the b directory
+
+rm -rv a - this will delete everything. give the parent directory with this command.
+
+
