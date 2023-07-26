@@ -1,0 +1,180 @@
+Lab 3 ls date and cal commands
+
+1) ls Command:
+
+We can use ls command to listout all files and directories present in the given directory.
+We can get manual documentation for any command by using man.
+man ls
+It provides complete information about ls command.
+
+Various options of ls Command:
+
+1) ls
+It will display all files and directories according to alphabetical order of names.
+
+2) ls -r
+It will display all files and directories in reverse of aplhabetical order.
+
+3) ls | more
+To display content line by line
+(To come out we have to use q)
+
+Ls -la
+5) ls -l
+To display long listing of files
+(IMAGE)
+(IMAGE)
+
+
+6) ls -t
+To display all files based on last modified date and time. Most recent is at top and old are at bottom.
+
+7) ls -rt
+To display all files based on reverse of last modified date and time. Old files are at top and recent files are at bottom.
+
+8) ls -a
+a means all
+To display all files including hidden files. Here . and .. also will be displayed.
+
+9) ls -A
+A means almost all
+To display all files including hidden files except . and ..
+(IMAGE)
+
+
+
+
+
+
+
+10) ls -F
+(IMAGE)
+To display all files by type.
+directory 🡪 /
+executable file 🡪 *
+link file 🡪 @
+
+Eg:
+initctl@ 🡪 Link File
+pts/ 🡪 Directory
+ls* 🡪 Executable File
+
+
+11) ls -f
+To disable colors
+(IMAGE)
+
+12) ls -i
+To display all files including inode number.
+i-node is the address of location, where file attributes are stored.
+i-node is the address of the location, where file attributes are stored.
+
+The following are various file attributes
+(IMAGE)
+
+
+1) The size of the file
+2) The number of links
+3) The owner
+4) The group
+5) The creation time
+6) The last modified time
+7) The last accessed time etc
+(IMAGE)
+
+
+13) ls -R
+R means Recursive.
+It will list all files and directories including sub directory contents also. By default ls will display only direct contents but not sub directory contents.
+
+14) ls -s
+The number of blocks used by file will be displayed.
+1 Block = 1Kb
+Note: In ubuntu each block is of 1KB but not 4KB.
+
+
+15) ls -h
+display in human readable format
+Note:
+
+If the number of files are very huge, then we can use less and more commands with ls to display page by page.
+
+$ ls /dev | less
+$ ls /dev | more
+
+If we want only fixed number of files either from top or from bottom we have to use head and tail commands with ls commands.
+
+$ ls /dev | head -5 🡪 disply only top 5 lines
+$ ls /dev | tail -5 🡪 display only bottom 5 lines
+
+Note: We can use these options simultaneously. When ever using options simultaneosuly then the order is not important.
+Eg: All the following commands are equal
+$ ls -l -t -r
+$ ls -t -r -l
+$ ls -l -r -t
+$ ls -ltr
+$ ls -trl
+
+
+
+
+
+
+
+2) date Command:
+We can use date command to display date and time of system.
+
+Various Options:
+
+1) date +%D
+To display only date in the form: mm/dd/yy
+
+2) date +%T
+To display only time in the form: hh:mm:ss
+
+3) date +%d
+To display only day value
+
+4) date +%m
+To display only month value
+
+5) date +%y
+To display only year value in yy form
+
+6) date +%Y
+To display only year value in yyyy form.
+
+7) date +%H
+To display only Hours value (in 24 hours scale format)
+
+8) date +%M
+To display only Minutes value
+
+9) date +%S
+To display only Seconds value
+
+(IMAGE)
+
+Eg 1: To display current system date in dd-mm-yyyy format.
+default format: mm/dd/yy
+date +%d-%m-%Y
+(IMAGE)
+cal Command:
+
+$ cal 🡪 To display current month calendar.
+(IMAGE)
+$ cal 2020 🡪 To display total year calendar.
+(IMAGE)
+$ cal 1 🡪 To display 1st year calendar.
+(IMAGE)
+
+
+
+
+$ cal 9999 🡪 To display 9999th year calendar.
+$ cal 10000 🡪 cal: year '10000' not in range 1..9999
+$ cal 08 2019 🡪 To display august 2019th calendar
+(IMAGE)
+
+
+
