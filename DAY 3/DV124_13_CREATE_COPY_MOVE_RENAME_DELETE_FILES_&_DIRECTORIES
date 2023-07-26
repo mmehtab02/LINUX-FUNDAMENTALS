@@ -1,0 +1,52 @@
+mkdir testdir
+
+touch testfile.txt
+
+cat > testfile.txt (fdgrthrthtrh)
+
+cp testfile.txt copyfile.txt
+
+RENAME A FILE : moving a file and renaming a file is the same process.
+
+mv testfile.txt origfile.txt
+
+move a file without renaming? specify a location and no file name :
+
+mkdir subdir1
+
+mv origfile.txt subdir1
+
+move and rename at the same time? :
+
+mv origfile.txt ../testfile.txt
+
+DELETE FILES :
+
+rm copyfile.txt   (be careful with rm)
+
+remove directories? :
+
+cp -r testdir copydir (copies contents)
+
+mkdir dir2
+
+cp -r testdir dir2 (copies entire directory and contents because exists)
+
+RENAME : mv testdir origdir
+
+MOVE DIRECTORY: mv origdir copydir
+
+cd copydir
+
+move and rename ? :
+
+mv origdir ../testdir
+
+delete directory? :
+
+cd ..
+
+rm -r copydir
+
+rm -rf testdir (forced, recursive {directory})
+
