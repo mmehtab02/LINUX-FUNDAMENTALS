@@ -1,0 +1,38 @@
+top most directory (/) root directory
+
+full path is called absolute path ( /philip/shells/bash ) - every step taken from the root / absolute beginning of file system.
+
+easy to understand, but can be inconvenient to work with.
+
+relative path is location relative to current working directory - (bash) (shells working directory)
+
+if working with files in or near current working directory, this can save you typing
+
+
+
+everytime a file is referenced by just the name, you have been using a relative path.
+
+the shell looks for the specified file name within the current working directory.
+
+CWD - Ocean → clam (relative path)
+
+absolute path → /home/philip/ocean/clam
+
+RP - clam/giant
+AP - /home/philip/ocean/clam/giant
+
+RP - ../mountain
+
+AP - /home/philip/mountain
+
+RP - . (ocean)
+AP - /home/philip/ocean
+
+RP - ~ (own home directory)
+AP - /home/philip
+
+RP - ~/ocean/otter
+AP - /home/philip/ocean/otter
+
+
+
