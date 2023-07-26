@@ -1,0 +1,17 @@
+cal (current month)
+
+date
+
+cal {year/0000} - whole month calendar
+cal 2020
+
+cal {month/0/00} {year/0000} - calendar for month and year
+cal 5 2012
+
+cal -3 (previous, current, next month calendars)
+
+cal -m (Monday start vs. Sunday default{-s})        ???
+
+cal -y
+
+man cal - more information
