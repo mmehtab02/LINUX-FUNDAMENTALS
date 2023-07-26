@@ -1,0 +1,15 @@
+ctrl + alt + t (terminal)
+
+‘cat’ - catenation - concatenate - arrange a string of chars into a chained list
+
+dskgldkjhjkb (repeat)
+dgnerljkkhkjh (repeat)
+ctrl + d
+
+take standard input print standard out
+
+cat helloWorld.txt (prints out what’s in the file)
+
+allows us to look into files without opening up programs.
+
+it is a lot more useful when getting into redirection.
