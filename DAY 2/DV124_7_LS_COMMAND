@@ -1,0 +1,27 @@
+
+ls - LINUX SHELL COMMAND USED TO OBTAIN A LIST OF ALL FILENAMES IN THE CURRENT DIRECTORY.
+
+
+
+combined options (arguments) most commonly used with ls
+
+ls -a - LISTS ALL THE FILES (INCLUDING HIDDEN FILES WHICH ARE NOT DISPLAYED BY DEFAULT, THEY BEGIN WITH A DOT)
+
+ls -A - removes the 2 dot files (. ..) (ALMOST ALL)
+
+ls -l - LISTS ALL ATTRIBUTES OF ALL FILES IN CURRENT DIRECTORY.
+
+ls -t - TIME OF LAST MODIFICATION
+
+ls -tl
+
+ls -r (reverse)
+
+ls -S (biggest sized file first)
+
+ls -Shl
+ls -Sr
+(combinations)
+
+
+various options like -u, -d, -R, etc.
