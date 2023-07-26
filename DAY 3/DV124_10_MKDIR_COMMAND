@@ -1,0 +1,8 @@
+mkdir mydir_123
+ls
+mkdir ~xyz (‘~xyz’)
+mkdir ~/dir (?)
+
+nested directories -
+
+mkdir -p a1/a2/a3/a4/a5
