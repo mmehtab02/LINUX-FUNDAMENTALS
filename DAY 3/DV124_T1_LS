@@ -1,0 +1,31 @@
+Ticket ls: - Read the instructions carefully and then you start working on it
+
+
+
+Ticket ls
+Jump to root directory
+cd /
+Display the contents of Root directory
+ls
+Long list the contents of Root directory
+ls -l
+List the hidden files of root directory
+ls -a          ls -al
+Change to the /dev directory
+cd dev
+Display the contents of /dev directory
+ls               ls /dev
+Change to the /proc directory
+cd ../proc                 cd /proc
+Display the contents of /proc directory
+ls                    ls /proc
+Change to /etc
+cd ../etc                         cd /etc
+Display the contents of /etc
+ls                       ls /etc
+Change to /usr/share/doc
+cd ../usr/share/doc                     cd /usr/share/doc
+Exit
+exit
+
+
