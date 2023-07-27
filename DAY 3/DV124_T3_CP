@@ -1,0 +1,52 @@
+
+Ticket cp: - Read the instructions carefully and then you start working on it
+
+
+
+Ticket cp (Use cp command with various options for following tasks)
+
+Create a file1.txt with following text
+cat > file1.txt
+In computing, cp is a command in various Unix and Unix-like operating systems for copying iles and directories. The command has three principal modes of operation, expressed by thetypes of arguments presented to the program for copying a file to another file, one of mor files to a directory, or for copying entire directories to another directory.
+
+OR :
+
+echo "In computing, cp is a command in various Unix and Unix-like operating systems for copying files and directories. The command has three principal modes of operation, expressed by the types of arguments presented to the program for copying a file to another file, one of more files to a directory, or for copying entire directories to another directory." > file1.txt
+
+
+
+
+Copy content of file1.txt to file2.txt
+cp file1.txt file2.txt
+Copy content of file2.txt to file3.txt, file4.txt and file5.txt all together in single command
+cp file2.txt file3.txt | cp file2.txt file4.txt | cp file2.txt file5.txt
+OR
+for dest in file3.txt file4.txt file5.txt; do cp file2.txt "$dest"; done
+Create a directory name box1
+mkdir box1
+Copy file1.txt to box1
+cp file1.txt box1
+Copy all remaining files to box1
+cp file{2..5}.txt box1
+Create another directory box2
+mkdir box2
+Copy all files box1 to box2
+cp box1/* box2/
+Copy box2 to box3, box4 and box5 all together in single command
+for dest in box3 box4 box5; do cp -r box2 "$dest"; done
+OR
+cp -r box2 box3 cp -r box2 box4 cp -r box2 box5
+OR
+cp -R box2 box3 box4 box5
+OR
+ cp -R box2 box3 | cp -R box2 box4 | cp -R box2 box5
+
+Create the backup of the destination file in the same folder with the different name and in different format.
+cp -r box3 box3_backup.bak
+cp -r box4 box4_backup.bak
+cp -r box5 box5_backup.bak
+
+
+
+
+
