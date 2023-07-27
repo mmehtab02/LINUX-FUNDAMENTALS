@@ -1,0 +1,65 @@
+Ticket mkdir, cat: - Read the instructions carefully and then you start working on it
+
+
+
+File Name
+Contents
+EC_01.txt
+Hi this file is from Cairo directory. Its location is Earth/Africa/Egypt/Cairo
+NA_01.txt
+Hi this file is from Abuja directory. Its location is Earth/Africa/Nigeria/Abuja
+KN_01.txt
+Hi this file is from Nairobi directory, its location is Earth/Africa/Kenya/Narobi
+ZH_01.txt
+Hi this file is from Harare directory, its location is Earth/Africa/Zimbabwe/Harare
+SJ_01.txt
+Hi this file is from Johannesburg directory, its location is Earth/Africa/SouthAfrica/Johannesburg
+
+
+Ticket
+Create one parent Directory with the name of earth
+
+Create sub directories of earth Africa continent
+
+mkdir -p Earth/Africa/
+
+Under Africa continent create 5 sub directories for countries (Egypt, Nigeria, Lenya, Zimbabwe, South Africa)
+
+Under each country create one sub-directory of their capital (for example create Cairo under Egypt)
+cd Earth/Africa
+mkdir -p Egypt/Cairo Nigeria/Abuja Kenya/Nairobi Zimbabwe/Harare SouthAfrica/Johannesburg
+
+Under last sub-directory of tree that is country capital directory create .txt file (green in color) with name mention in above table and content same as mention in above table
+
+echo "Hi this file is from Cairo directory. Its location is Earth/Africa/Egypt/Cairo" > Egypt/Cairo/EC_01.txt
+
+echo "Hi this file is from Abuja directory. Its location is Earth/Africa/Nigeria/Abuja" > Nigeria/Abuja/NA_01.txt
+
+echo "Hi this file is from Nairobi directory, its location is Earth/Africa/Kenya/Nairobi" > Kenya/Nairobi/KN_01.txt
+
+echo "Hi this file is from Harare directory, its location is Earth/Africa/Zimbabwe/Harare" > Zimbabwe/Harare/ZH_01.txt
+
+echo "Hi this file is from Johannesburg directory, its location is Earth/Africa/SouthAfrica/Johannesburg" > SouthAfrica/Johannesburg/SJ_01.txt
+
+OR USE CAT :
+
+cat > Kenya/Nairobi/KN_01.txt
+Hi this file is from Nairobi directory, its location is Earth/Africa/Kenya/Nairobi
+(ctrl + d)
+
+cat > Egypt/Cairo/EC_01.txt
+Hi this file is from Cairo directory, its location is Earth/Africa/Egypt/Cairo
+(ctrl + d)
+
+cat > Nigeria/Abuja/NA_01.txt
+Hi this file is from Abuja directory, its location is Earth/Africa/Nigeria/Abuja
+(ctrl + d)
+
+cat > Zimbabwe/Harare/ZH_01.txt
+Hi this file is from Harare directory, its location is Earth/Africa/Zimbabwe/Harare
+(ctrl + d)
+
+cat > SouthAfrica/Johannesburg/SJ_01.txt
+Hi this file is from Johannesburg directory, its location is Earth/Africa/SouthAfrica/Johannesburg
+(ctrl + d)
+
