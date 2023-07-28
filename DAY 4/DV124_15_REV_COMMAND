@@ -1,0 +1,22 @@
+rev (reverses text)
+
+echo Hello, world! | rev  (prints reverse)
+
+head -3 states; rev states | head -3       (prints normal and reverse)
+
+-
+Alabama - AL
+Alaska - AK
+Arizona - AZ
+LA - amabalA
+KA - aksalA
+ZA - anozirA
+-
+
+head -5 states | rev | cut -c 6- | rev
+
+to see what happens : cat eg
+
+“Alabama - AL” => “LA - amabalA” => “amabalA” => “Alabama”
+
+
