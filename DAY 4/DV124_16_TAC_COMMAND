@@ -1,0 +1,18 @@
+tac (displays files with lines in reverse order, text files)
+
+cat event
+Mar 11, 2020……
+Mar 15, 2020……
+Mar 17, 2020……
+
+tac events (reverses order)
+
+it doesn’t change the file, it only allows you to view it differently. you can save the contents to a new file like this :
+
+tac events > events.rev
+
+command output reverse :
+
+who
+who | tac
+
