@@ -1,0 +1,46 @@
+head command - prints top N number of lines of given input
+
+default is first 10 lines
+
+if more than one file name provided, data from each file is preceded by its file name
+
+head [OPTION]... [FILE]...
+
+head states.txt (first 10 lines of file)
+
+
+
+some head options -
+-n		--lines
+
+prints first ‘num’ lines instead of first 10 lines. num is mandatory to be specified in command otherwise it displays error.
+
+head -n num
+head -n 3 states.txt
+
+-c		--bytes
+
+prints first ‘num’ bytes from specified file. new line = single char = byte. num mandatory.
+					123456
+head -c 6 state.txt    (first 6 bytes)     “Andhra”
+
+-q		--quiet
+
+
+
+-v		--verbose
+
+using this option, data from a specified file is always preceded by file name.
+
+⇒ states.txt ⇐
+(all names in file listed)
+
+
+
+
+head command can be piped (|) with other commands.
+this example shows output of ls command piped to head to show only 3 most recently modified files / folders :
+
+ls -t | head -n 3
+
+
