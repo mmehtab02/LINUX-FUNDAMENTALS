@@ -1,0 +1,15 @@
+ls
+
+cat text.txt
+(print entries)
+
+tail text.txt
+(last 10 entries displayed)
+
+tail -4 text.txt
+(last 4 lines of file displayed)
+
+tail -c13 text.txt
+(almost last 2 lines of file displayed)
+
+
