@@ -1,0 +1,20 @@
+less (view and search text files) (man uses less)
+
+command -options(over 30) arguments(file)
+
+-2 options
+--help - view a summary of less commands and navigation
+-N - view line numbers
+
+
+
+Why is less important? - default pages for man pages, viewing text is an essential task in linux.
+
+less --help
+
+less video5.txt
+q
+
+less -N video5.txt (numbers line, especially helpful reviewing code)
+
+tip - footer of less reminds you of 2 most important keys (h - help, q - quit)
