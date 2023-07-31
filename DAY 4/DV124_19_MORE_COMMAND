@@ -1,0 +1,36 @@
+DV124_19_MORE_COMMAND
+
+
+
+view text files
+
+page viewer
+
+command -options arguments
+
+more (10 options) (text file argument)
+
+more is unique program, has about 18 internal commands
+
+-h (print help screen)
+h (show internal commands)
+q (quit more)
+
+
+_________________________________________
+
+
+man more > video55.txt
+
+more video55.txt
+
+DESCRIPTION (MORE IS PRIMITIVE, LESS PROVIDES MORE PLUS EXTENSIVE ENHANCEMENTS)
+
+h (internal commands)
+enter - keep going
+q - leave
+
+fun fact - program less improved on more but was named less
+
+
+
