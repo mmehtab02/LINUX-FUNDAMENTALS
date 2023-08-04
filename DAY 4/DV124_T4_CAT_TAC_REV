@@ -1,0 +1,28 @@
+
+Ticket cat, tac, rev: - Read the instructions carefully and then you start working on it
+
+
+
+
+Ticket
+
+Create a file ubuntu.txt and use above content
+
+cat > ubuntu.txt
+
+Ubuntu is a Linux distribution based on Debian and composed mostly of free and open-source software. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots. All the editions can run on the computer alone, or in a virtual machine. Ubuntu is a popular operating system for cloud computing, with support for OpenStack. Ubuntu's default desktop has been GNOME, since version 17.10.
+
+ctrl + d
+
+Display content of file using cat command
+cat ubuntu.txt
+Display file content in reverse order of lines, reverse of cat command
+tac ubuntu.txt
+Display each line content in horizontal reverse order
+rev ubuntu.txt
+Display file content using more command
+more ubuntu.txt
+Display file content using less command
+less ubuntu.txt
+
+
