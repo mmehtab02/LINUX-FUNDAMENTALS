@@ -1,0 +1,73 @@
+Ticket: - Read the instructions carefully and then you start working on it
+
+
+
+Ticket
+Create a directory SAMPLE under your home directory.
+cd
+mkdir SAMPLE
+Create a sub-directory by name TRIAL under SAMPLE.
+mkdir SAMPLE/TRIAL
+Change to SAMPLE.
+cd SAMPLE
+Change to your home directory.
+cd
+Change from home directory to TRIAL by using absolute and relative pathname.
+cd /root/SAMPLE/TRIAL        (absolute path)
+cd SAMPLE/TRIAL                   (relative path)
+Remove directory TRIAL.
+cd
+rm -r SAMPLE/TRIAL
+Create a directory TEST using absolute pathname.
+mkdir /root/TEST
+Using a single command change from current directory to home directory
+cd ~
+cd
+Remove a directory using absolute pathname.
+rm -R /root/SAMPLE
+Create files myfile and yourfile under Present Working Directory.
+cat > myfile                 This is My File                 ctrl + d
+cat > yourfile               This is Your File		ctrl + d
+Display the files myfile and yourfile.
+cat myfile yourfile
+Append more lines in the myfile and yourfile files.
+echo Additional My File >> myfile
+echo Additional Your File >> yourfile
+OR
+cat >> myfile  		addition  	ctrl + d
+cat >> yourfile		addition 	ctrl + d
+How will you create a hidden file?
+like any other file → cat > .hiddenfile        This file is hidden         ctrl + d          cat .hiddenfile
+Copy myfile file to emp
+cp myfile emp
+Write the command to create alias name for a file.
+ln -s emp alias_emp
+Move yourfile file to dept.
+mv yourfile dept
+Copy emp file and dept file to TRIAL directory
+mkdir -p SAMPLE/TRIAL
+cp emp dept SAMPLE/TRIAL
+If you compare a file with itself
+it outputs the differences
+Compare myfile file and emp file.
+cmp myfile emp		diff myfile emp
+Append two more lines in emp file existing in TRIAL directory.
+cat >> SAMPLE/TRIAL/emp            line1, line2, ctrl + d
+Compare employee file with emp file in TRIAL directory.
+Find the difference between the above file.
+Remove the files in the TRIAL directory.
+rm *                              rm SAMPLE/TRIAL/*
+Can you remove a directory with files by using a single command
+yes
+rm -R directory_name
+Is there any command available to get back a deleted file?
+no
+Rename TRIAL as DATA.
+mv TRIAL DATA
+Copy DATA to another directory by name TRIAL.
+cp -r DATA TRIAL
+Create a file called dummy in TRIAL and link it to another file by name star.
+cd SAMPLE/TRIAL
+
+Link the dummy file in TRIAL to another file by name power in DATA.
+ln -s dummy /root/SAMPLE/DATA/power
