@@ -1,0 +1,39 @@
+Ticket:- Read the instructions carefully and then you start working on it
+
+
+
+
+
+Ticket
+
+Create a file tail1.txt and put content -1 in it
+cat >> tail1.txt
+The Unix operating system was conceived and implemented in 1969,
+at AT&T's Bell Labs, in the United States by Ken Thompson, Dennis
+Ritchie, Douglas Mcllroy, and Joe Ossanna. First released in 1971, Unix was
+written entirely in assembly language, as was common practice at the time.
+In 1973 in a key, pioneering approach, it was rewritten in the C programming
+language by Dennis Ritchie (with the exception of some hardware and I/O
+routines). The availability of a high-level language implementation of Unix
+made its porting to different computer platforms easier.
+Create a file tail2.txt and put content-2 in it
+cat >> tail2.txt
+Linus Torvalds had wanted to call his invention "Freax", a portmanteau of
+"free", "freak", and "x" (as an allusion to Unix). During the start of his work
+on the system, some of the project's makefiles included the name "Freax"
+for about half a year. Torvalds had already considered the name "Linux", but
+initially dismissed it as too egotistical
+Returns bottom 10 lines of tail1.txt
+tail tail1.txt
+Returns bottom 10 lines of tail2.txt
+tail tail2.txt
+Returns bottom 10 lines of each files together along with filename as header
+tail -n 10 tail1.txt tail2.txt
+Returns last 5 lines of each file together
+tail -n 5 tail1.txt tail2.txt
+Returns last 8 lines of tail1.txt
+tail -n 8 tail1.txt
+
+
+
+
