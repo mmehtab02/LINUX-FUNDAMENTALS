@@ -1,0 +1,40 @@
+Ticket: - Read the instructions carefully and then you start working on it
+
+
+
+
+
+Ticket
+
+Create a directory Linux in your home directory
+cd
+mkdir Linux
+cd Linux
+Create two file linuxdis1.txt and linuxdis2.txt
+touch linuxdis1.txt linuxdis2.txt
+In Linuxdis1.txt put content-1 and content-2 in linuxdis2.txt
+cat > linuxdis1.txt
+A Linux distribution (often abbreviated as distro) is an operating system made from a
+software collection that is based upon the Linux kernel and, often, a package
+management system. Linux users usually obtain their operating system by downloading
+one of the Linux distributions, which are available for a wide variety of systems ranging
+from embedded devices
+
+cat > linuxdis2.txt
+There are commecially-backed distributions, such as Fedora (Red
+Hat), openSUSE (SUSE) and Ubuntu (Canonical Ltd.), and entirely community-driven
+distributions, such as Debian, Slackware, Gentoo and Arch Linux.
+
+Using wc command count number of line, words and byte in linuxdis1.txt
+wc linuxdis1.txt
+Using wc command count number of line, words and byte in linuxdis2.txt
+wc linuxdis2.txt
+Using wc command count number of line, words and byte in linuxdis1.txt and linuxdis2.txt together
+wc linuxdis1.txt linuxdis2.txt
+Now display only number of words in linuxdis1.txt
+wc -w linuxdis1.txt | awk '{print $1}'
+Display number of line in linuxdis1.txt
+wc -l linuxdis1.txt | awk '{print $1}'
+
+
+
