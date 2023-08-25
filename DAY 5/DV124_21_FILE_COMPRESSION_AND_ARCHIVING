@@ -1,0 +1,34 @@
+______________________________________________
+compression - zip, gzip, bzip2
+______________________________________________
+
+zip -r test.zip test.txt
+unzip test.zip
+
+
+gzip test.txt 		(original file replaced)
+gunzip text.txt.gz
+
+
+bzip2 test.txt              (also replaced)
+bunzip2 test.txt.bz2
+
+
+______________________________________________
+archiving - tar
+______________________________________________
+
+tar cvf test.tar test.zip              (create archive)
+
+tar tvf test.tar 			(list contents in archive)
+
+tar czvf test.tar.gz test.zip       (compress and archive)  (gzip)
+tar xzvf test.tar.gz		(untar)
+
+
+tar cjvf test.tar.bz2 test.zip        (compress and archive)  (bzip2)
+tar xjvf test.tar.bz2 test.zip		(untar)
+
+
+
+
