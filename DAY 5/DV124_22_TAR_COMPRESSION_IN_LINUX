@@ -1,0 +1,26 @@
+tar - compress + backup (archive)
+
+tar - archives
+
+gzip, bzip2 - compress
+
+______________________________________
+
+
+tar czvf linux.tar.gz linux                   (gzip compress + archive)
+
+tar xvf linux.tar.gz			(uncompress directory)
+
+tar tvf linux.tar.gz			(view contents)
+
+since the archive is compressed, we cannot add files to it.
+
+tar -rvf linux.tar.gz file.txt		(error)
+
+
+
+tar jcvf linux.tar.bz2 linux	(bz2 compress + archive)
+tar rvf linux.tar.bz2 file.txt   (error)
+tar tvf linux.tar.bz2		(list)
+tar xvf linux.tar.bz2		(undo)
+
