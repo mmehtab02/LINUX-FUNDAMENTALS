@@ -1,0 +1,38 @@
+tarball (linux) = zip (windows)
+
+tar = archive
+ball = compress
+
+gz, bz2, zip (compression algorithms)
+
+_________________________________________
+
+mkdir newdir testdir
+touch testfile tinfile tinfile2
+cd testdir
+touch file{1..3}
+cd ..
+___________________________________________
+
+tar -c (create) z (gzip) v (verbose) f (specify file name)
+tarArchive.tar.gz
+testdir
+
+(original files are intact)
+___________________________________________
+LIST :
+
+tar tvf tarArchive.tar.gz        (long list)
+tar --list -f tarArchive.tar.gz   (short list)
+___________________________
+
+cp tarArchive.tar.gz newdir
+cp tarArchive.tar.gz newdir/tarArchive.tar.gz     (rename option)
+cd newdir
+____________________________________________
+
+(extract) :
+tar xzvf tarArchive.tar.gz
+
+
+
