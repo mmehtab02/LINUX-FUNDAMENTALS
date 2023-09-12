@@ -1,0 +1,89 @@
+FILE + FOLDER PERMISSIONS → CHANGE / EDIT AT WILL
+
+https://linuxhandbook.com/linux-file-permissions/
+
+___________________________________________
+
+FILE TYPE:
+
+- (FILE)
+D (DIRECTORY)
+L (SYMBOLIC LINK)
+
+___________________________________________
+
+PERMISSIONS: READ, WRITE, EXECUTE (- MEANS NOTHING)
+
+R- - (READ ONLY)
+RW- (READ, WRITE, NO EXECUTE)
+RWX (R, W, E)
+
+___________________________________________
+
+HARD LINK COUNT: (0 MOST OF THE TIME, IGNORE, HARDLY USED)
+
+___________________________________________
+
+USER OWNER, GROUP OWNER (FILE ASSIGNED TO USER, AND GROUP)
+
+FILE SIZE
+
+MODIFICATION TIMESTAMPS
+
+FILE NAME
+
+___________________________________________
+
+PERMISSIONS REPEATED 3 TIMES :
+
+RWX (USER OWNER) RW- (GROUP OWNER) R- - (OTHER)
+
+_____________________________________________
+
+CHANGING PERMISSIONS : CHMOD
+CHMOD (NUMBER) OR CHMOD (LETTER) - EITHER OR
+READ = 4
+WRITE = 2
+X = 1
+
+RWX = 7
+
+R-X = 5
+
+RW = 6
+
+MOSTLY USED - 5 (R-X) (CAN’T CHANGE)
+7 - GLOBAL RW PRIVEL
+6 - RW-
+4 - READ
+
+1, 2, 3 - DON’T MAKE SENSE MUCH, NEVER USED USUALLY
+
+_________________________________________________
+
+
+CHMOD 666 A.TXT     (USER, GROUP, OTHER)  (RW-)
+777 (RWX ALL 3)
+
+NUMBERS EASIER… BUT SYMBOLIC MODE TOO…
+
+________________________________________________
+
+OWNERSHIP - CHOWN
+
+CHOWN (USER, GROUP, FILE/FOLDER)
+
+CHOWN USER:GROUP FILE/FOLDER  (BEST PRACTICE)
+
+_______________________________________________
+
+EXAMPLES:
+
+CHOWN WWW-DATA:WWW-DATA TEST.TXT
+(OWNERSHIP CHANGED)
+
+CHOWN TITUS:WWW-DATA TEST.TXT
+
+CHMOD 774 TEST.TXT (USER, GROUP - RWX)
+
+CHMOD 775 TEST.TXT (OTHER - READ, X, NO WRITE)
